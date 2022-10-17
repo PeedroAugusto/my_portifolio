@@ -1,0 +1,126 @@
+.main-contact .links {
+    display: flex;
+    margin-left: 70px;
+    justify-content: center;
+}
+
+.main-contact .links div {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+   
+}
+
+.main-contact .links .git {
+    margin-right: 400px;
+    margin-left: -60px;
+    animation: showing-left 1s;
+    animation-fill-mode:forwards
+}
+
+.main-contact .links .cont {
+    margin-left: 100px;
+}
+
+.main-contact .links a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 50px;
+    align-self: center;
+}
+
+.main-contact .links i {
+    color: #2bc0e3;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: large;
+}
+
+.main-contact p {
+    margin-bottom: 90px;
+    color: white;
+}
+
+
+.main-contact{
+    text-align-last: center;
+    margin-top: 150px;
+    margin-bottom: 344px;
+}
+.main-contact h1 i {
+    color: #2bc0e3;
+    padding: 0px 20px 0px 0px;
+    margin-left: 55px;
+}
+
+.main-contact h1 {
+    color: white;
+    margin-bottom: 90px;
+    margin-left: -120px;
+}
+
+@media (max-width: 999px) {
+    .main-contact .links div {
+        margin-right: 0px;
+    }
+    .main-contact .links .git {
+        margin-right: 0px;
+        margin-left: 0;
+        animation: none;
+    }
+    .main-contact .links .cont {
+        margin-left: 0px;
+    }
+    .main-contact .links {
+        display: flex;
+        margin-left: 0px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .main-contact h1 {
+        margin-left: -84px;
+    }
+
+    .main-contact .links div {
+        align-self: center;
+    }
+
+}
+
+@media (max-width: 499px) {
+    #tell {
+        margin-bottom: 20px;
+        display: flow-root;
+    }
+
+    .a-tell {
+        margin: 0px 0px 0px 75px;
+    }
+
+    .main-contact .links i {
+        margin-bottom: 20px;
+    }
+
+    .main-contact .links a {
+        align-self: auto;
+    }
+}
+
+@keyframes showing-left {
+    0% {}
+
+    100% {
+        margin-right: 150px;
+        opacity: 1;
+    }
+}
+
+@keyframes showing-right {
+    0% {}
+
+    100% {
+        margin-right: 150px;
+        opacity: 1;
+    }
+}

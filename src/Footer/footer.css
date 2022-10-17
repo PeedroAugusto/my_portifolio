@@ -1,0 +1,17 @@
+.main-footer {
+    height:100px;
+    width: 100%;
+    background-color: #1b222c;
+    text-align: center;
+    padding-top: 50px;
+    color: gray;
+}
+
+.main-footer span {
+    color: #2bc0e3;
+}
+@media (max-width: 499px) {
+    .main-footer p{
+        font-size: 12px;
+    }
+}

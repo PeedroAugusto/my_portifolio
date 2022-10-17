@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Secular One', sans-serif;
+}
+
+
+
+.main-home .banner {
+    height: 20vh;
+    padding: 250px 80px 200px 80px;
+    margin-left: -215px;
+    opacity: 0;
+    animation: showing-banner-left 1s;
+    animation-fill-mode: forwards
+}
+
+.main-home .banner h2 {
+    color: #2bc0e3;
+    font-size: 17px;
+    padding: 2px;
+
+}
+
+.main-home .banner button {
+    width: 350px;
+    height: 60px;
+    background-color: transparent;
+    border-color: #2bc0e3;
+    color: white;
+    box-shadow: 0 0 1em 0.5em #2bc0e3;
+
+}
+
+.main-home .banner h1 {
+    color: white;
+    padding-bottom: 20px;
+    font-size: 45px;
+}
+
+.main-home .about {
+    padding-left: 80px;
+    color: white;
+    padding-bottom: 300px;
+    display: flex;
+    margin-top: 150px;
+    padding-right: 50px;
+}
+
+.main-home .about .content {
+    margin-right: 30%;
+}
+
+.main-home .about .imgs {
+    box-shadow: 0 0 1em 0.5em #2bc0e3;
+    border-radius: 290px;
+    width: 200px;
+    height: 190px;
+    padding: 10px 8px 18px 9px;
+}
+
+.main-home .about .imgs img {
+    border-radius: 290px;
+    width: 200px;
+}
+
+.main-home .about .content p {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: xx-large;
+}
+
+.main-home .about .content .links {
+    margin-left: -30px;
+}
+
+.main-home .about .content .links i {
+    margin-left: 50px;
+    font-size: xx-large;
+    color: #2bc0e3;
+}
+
+.main-home .about .content1 {
+    max-width: 50%;
+}
+
+.main-home .about .content1 h2 {
+    margin-bottom: 70px;
+    font-size: xx-large;
+}
+
+.main-home .about .content1 i {
+    font-size: x-large;
+    color: #2bc0e3;
+    margin-right: 10px;
+}
+
+.main-home .about .content1 .sub-title {
+    margin-bottom: 20px;
+    font-size: x-large;
+    color: white;
+}
+
+.main-home .about .content1 p strong {
+    color: white;
+}
+
+.main-home .about .content1 p {
+    font-size: large;
+    margin-bottom: 10px;
+    color: #d6d6d6;
+}
+
+.banner .txt-sub {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#text>div {
+    display: flex;
+}
+
+#text>div>div {
+    margin-right: 30px;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}
+
+@keyframes showing-banner-left {
+    100% {
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 999px) {
+    .main-home .about .imgs {
+        border-radius: 304px;
+        width: 172px;
+        height: 177px;
+        padding: 10px 0px 0px 9px;
+    }
+    .main-home .banner {
+        margin-left: -15px;
+        opacity: 1;
+        animation: none;
+        animation-fill-mode: forwards
+    }
+    
+    .main-home .about .imgs img {
+        border-radius: 276px;
+        width: 165px;
+    }
+
+    .main-home .about .content p {
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-bottom: 13px;
+        font-size: x-large;
+    }
+
+    .main-home .about .content .links i {
+        margin-left: 45px;
+        font-size: x-large;
+    }
+
+    .main-home .about .content {
+        margin-right: 15%;
+        margin-bottom: 80px;
+    }
+
+    .main-home .about .content1 {
+        max-width: 100%;
+    }
+
+    .main-home .about {
+        display: block;
+        padding-bottom: 233px;
+    }
+}
+
+@media (max-width: 499px) {
+    .main-home .banner {
+        padding: 250px 40px 200px 40px;
+    }
+
+    .main-home .banner h2 {
+        font-size: 12px;
+    }
+
+    .main-home .banner h1 {
+        font-size: 30px;
+    }
+
+    .main-home .banner button {
+        width: 280px;
+        height: 53px;
+    }
+
+    .main-home .about {
+        padding-left: 45px;
+        padding-bottom: 100px;
+        margin-top: 170px;
+    }
+
+    .main-home .about .content1 h2 {
+        font-size: x-large;
+    }
+
+    .main-home .about .content1 .sub-title {
+        font-size: large;
+    }
+}

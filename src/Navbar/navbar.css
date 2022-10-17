@@ -1,0 +1,85 @@
+.main-navbar {
+    position: sticky;
+    width: 100%;
+    margin: 0px;
+    height: 8vh;
+    padding-top: 1px;
+}
+
+.main-navbar .navbar {
+    display: flex;
+    margin: 50px 80px 0px 80px
+}
+
+.main-navbar .navbar .logo p {
+    color: white;
+    font-size: large;
+}
+
+.main-navbar .logo i {
+    font-size: large;
+}
+
+.main-navbar .navbar .links {
+    margin-left: auto;
+}
+
+.main-navbar .navbar .links ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-navbar .navbar .links ul a {
+    text-decoration: none;
+    color: gray;
+}
+
+.main-navbar .navbar .links ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    border-radius: 10px;
+    height: 4px;
+    background: #2bc0e3;
+    margin-left: 0px;
+    transition: width .2s;
+}
+
+.main-navbar .navbar .links ul .active::after {
+    width: 70%;
+}
+.main-navbar .navbar .links ul .active{
+    color: white;
+}
+
+.main-navbar .navbar .links ul li {
+    margin: 0px 30px 0px 30px;
+    font-size: large;
+}
+
+@media (max-width: 999px) {
+    .main-navbar .navbar {
+        display: flex;
+        margin: 50px 20px 0px 20px;
+    }
+}
+
+@media (max-width: 499px) {
+    .main-navbar .navbar .links ul li {
+        margin: 0px 10px 0px 20px;
+        font-size: 15px;
+    }
+
+    .main-navbar .navbar .logo p {
+        font-size: 0px;
+    }
+
+    .main-navbar .logo i {
+        font-size: 0px;
+    }
+
+    .main-navbar .navbar .links {
+        margin: 0 auto;
+    }
+   
+}

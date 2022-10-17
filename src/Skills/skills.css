@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Secular One', sans-serif;
+}
+
+.main-skills {
+    background-color: #202733;
+}
+
+.main-skills h1 i {
+    color: #2bc0e3;
+    padding: 0px 20px 0px 0px;
+    margin-left: 55px;
+}
+
+.main-skills h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.main-skills .skills-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.main-skills .skills-logo img {
+    font-size: 60px;
+    margin-left: 200px;
+    margin-top: 70px;
+    opacity: 0;
+    animation: showing-skills 1s;
+    animation-fill-mode:forwards
+}
+
+.main-skills .skills-logo .bar {
+    width: 50px;
+    background: black;
+    margin: 0px 0px 0px 200px;
+    height: 7px;
+    text-align: left;
+    border-radius: 10px;
+    opacity: 0;
+    animation: showing-bar 1s;
+    animation-fill-mode:forwards
+}
+.main-skills .bar .progress {
+    height: 7px;
+    border-radius: 5px;
+}
+
+.main-skills .main-projects {
+    padding-bottom: 143px;
+    background-color: #202733;
+    TEXT-ALIGN-LAST: CENTER;
+}
+
+.main-skills .list-projects {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-skills .skills{
+    text-align-last: center;
+    margin-bottom: 160px;
+    margin-top: 160px;
+}
+
+.main-skills .list-projects .project {
+    background-color: #2b3443;
+    max-width: 350px;
+    margin-left: 60px;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.main-skills .list-projects .project img {
+    max-width: 350px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.main-skills .list-projects .project p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.main-skills .list-projects .project a {
+    color: white;
+
+}
+
+.main-skills .list-projects .prod .txt {
+    margin-bottom: 130px;
+    margin-top: 60px;
+}
+
+.main-skills .list-projects .project button {
+    width: 350px;
+    height: 60px;
+    background-color: #202733;
+    border-color: #2bc0e3;
+    color: white;
+    box-shadow: 0 0 1em -0.5em #2bc0e3;
+}
+.main-skills .list-projects .project:hover {
+    box-shadow: 0px 0px 0px #2bc0e3, 0px 0px 30px #2bc0e3;
+    max-width: 370px;
+}
+@media (max-width: 1400px) {
+    .main-skills .list-projects .project img {
+        max-width: 355px;
+        border-radius: 9px;
+    }
+
+    .main-skills .skills .skills-logo .bar {
+        margin: 0px 0px 0px 100px;
+    }
+
+    .main-skills .skills-logo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main-skills .list-projects .project {
+        max-width: 330px;
+        margin-left: 46px;
+        height: 315px;
+        padding: 13px;
+        border-radius: 16px;
+    }
+
+    .main-skills .main-projects {
+        margin-top: 110px;
+    }
+
+    .main-skills .skills-logo i {
+        font-size: 50px;
+        margin-left: 80px;
+        margin-top: 80px;
+    }
+
+    .main-skills .skills {
+        height: 20vh;
+        padding: 250px 55px 200px 0px;
+    }
+
+    .main-skills .skills-logo .bar {
+        width: 50px;
+        margin: 0px 0px 0px 80px;
+        height: 7px;
+        text-align: left;
+        border-radius: 10px;
+    }
+
+    .main-skills .list-projects .project {
+        max-width: 370px;
+        margin-left: 10px;
+        height: 315px;
+        margin-bottom: 70px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 499px) {
+    .main-skills .skills {
+        height: 45vh;
+        padding: 20px 55px 100px 0px;
+    }
+    .main-skills .list-projects .project {
+        max-width: 250px;
+    }
+    .main-skills .list-projects .project img {
+        max-width: 240px;
+    }
+    .main-skills .list-projects .project button {
+        width: 220px;
+    }
+    .main-skills #titleprod {
+        margin-left: -75px;
+        font-size: x-large;
+    }
+    .main-skills #titlehab {
+        margin-left: -30px;
+        font-size: x-large;
+    }
+    .main-skills .skills-logo {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .main-skills .list-projects .project:hover {
+        box-shadow: 0px 0px 0px #2bc0e3, 0px 0px 30px #2bc0e3;
+        max-width: 230px;
+    }
+}
+
+@keyframes showing-skills {
+    100%{
+        margin-left: 100px;
+        opacity: 1;
+    }
+}
+@keyframes showing-bar {
+    100%{
+        margin: 0px 0px 0px 100px;
+        opacity: 1;
+    }
+}
